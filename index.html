@@ -17,7 +17,7 @@
     referrerpolicy="no-referrer"
     >
 
-    <title>Hello, world!</title>
+    <title>The Surfing Project</title>
   </head>
   <body>
 
@@ -27,21 +27,29 @@
 
     <style>
 
-     
-      .banner
+      body, html
+      {
+        height: 100vh;
+      }
+
+     .banner-container
       {
         background-image: url(https://images.pexels.com/photos/1330217/pexels-photo-1330217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        height: 410px;
       }
 
-      .banner-container
+      .banner
       {
-        height: 600px;
+        
+        backdrop-filter: blur(3px);
       }
 
-      .custom-img {
+
+      .custom-img 
+      {
         height: 400px;
         object-fit: cover; /* Remplit sans déformer */ 
       }
@@ -84,8 +92,8 @@
     </header>
 
     <!-- BANNER -->
-      <div class="banner-container container-fluid p-0">
-        <div class="banner container-fluid p-5 bg-primary text-white text-center h-75 ">
+      <div class="banner-container container-fluid p-0 m-0">
+        <div class="banner container-fluid p-5 text-white text-center h-100">
           <h1>Partez à l'aventure</h1>
           <p>Découvrez notre école de surf en peer-learning</p>
           <button type="button" class="btn btn-primary ">Je m'inscris à la prochaine session</button>
@@ -127,27 +135,27 @@
         <h1>Témoignages</h1>
       </div>
       <div class="row row-cols-1 row-cols-md-2 mb-3 mt-2 text-center">
-        <div class="col">
-          <img class="card-img-top custom-img " src="https://images.pexels.com/photos/240513/pexels-photo-240513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="surfman">
+        <div class="col d-flex">
           <div class="card">
-            <div class="card-body">
-              <div class="card-text">
-                <p>Surfing is love, surfing is life</p>
-                <small class="">Someone. June 2021</small>
+            <img class="card-img-top custom-img " src="https://images.pexels.com/photos/240513/pexels-photo-240513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="surfman">
+              <div class="card-body text-start">
+                <div class="card-text">
+                  <p>Salut, Je m'appelle Brice je viens de Nice. Je suis surfeur à mes heures ascendant snowboarder.</p>
+                    <small class="text-muted">Brice. Avril 2005</small>
+                </div>
               </div>
-            </div>
-          </div>
+          </div>  
         </div>
-        <div class="col">
-          <img class="card-img-top custom-img " width src="https://images.pexels.com/photos/2869354/pexels-photo-2869354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="planche de surfs">
-          <div class="card ">
-            <div class="card-body">
-              <div class="card-text">
-                <p>Surfing is love, surfing is life</p>
-                <small class="text-">Someone. July 2024</small>
+        <div class="col d-flex">
+          <div class="card">
+            <img class="card-img-top custom-img " width src="https://images.pexels.com/photos/2869354/pexels-photo-2869354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="planche de surfs">
+              <div class="card-body text-start">
+                <div class="card-text">
+                  <p>Surfing is love, surfing is life. Pas de blagues, pas de vagues, ne marche pas en zig-zag.</p>
+                    <small class="text-muted">Sherek. Janvier 2013</small>
+                </div>
               </div>
-            </div>
-          </div>
+          </div> 
         </div>
       </div>
       <!-- PRICE TITLE -->
