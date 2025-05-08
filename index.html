@@ -26,6 +26,8 @@
     
 
     <style>
+
+     
       .banner
       {
         background-image: url(https://images.pexels.com/photos/1330217/pexels-photo-1330217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -33,6 +35,18 @@
         background-position: center;
         background-size: cover;
       }
+
+      .banner-container
+      {
+        height: 600px;
+      }
+
+      .custom-img {
+        height: 400px;
+        object-fit: cover; /* Remplit sans déformer */ 
+      }
+
+
 
     </style>
 
@@ -70,128 +84,132 @@
     </header>
 
     <!-- BANNER -->
-      <div class="banner container-fluid p-5 bg-primary text-white text-center h-75 ">
-        <h1>Partez à l'aventure</h1>
-        <p>Découvrez notre école de surf en peer-learning</p>
-        <button type="button" class="btn btn-primary ">Je m'inscris à la prochaine session</button>
-        <button type="button" class="btn btn-secondary ">Je découvre le programme</button>
+      <div class="banner-container container-fluid p-0">
+        <div class="banner container-fluid p-5 bg-primary text-white text-center h-75 ">
+          <h1>Partez à l'aventure</h1>
+          <p>Découvrez notre école de surf en peer-learning</p>
+          <button type="button" class="btn btn-primary ">Je m'inscris à la prochaine session</button>
+          <button type="button" class="btn btn-secondary ">Je découvre le programme</button>
+        </div>
       </div>
 
     
 
-    <!-- THE SURFING PROJECT 3 POINTS -->
-    <div class="three-points-header p-3 text-center">
-      <h1>The Surfing project en 3 points</h1>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-3 mb-3 mt-2 text-center">
-      <div class="col">
-        <i class="fas fa-money-bill-wave fa-3x"></i>
-        <h3>Pas chère</h3>
-        <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogatus multa coactusque mentiri, miraberis numquam antea visus summatem virum tenuem te sic enixius observantem, ut paeniteat ob haec bona tamquam praecipua non vidisse ante decennium Romam.
-        </p>
+    <main class="container">
+      <!-- THE SURFING PROJECT 3 POINTS -->
+      <div class="three-points-header p-3 text-center">
+        <h1>The Surfing project en 3 points</h1>
       </div>
-      <div class="col">
-        <i class="fas fa-couch fa-3x"></i>
-        <h3>Relax</h3>
-        <p>Denique Antiochensis ordinis vertices sub uno elogio iussit occidi ideo efferatus, quod ei celebrari vilitatem intempestivam urgenti, cum inpenderet inopia, gravius rationabili responderunt; et perissent ad unum ni comes orientis tunc Honoratus fixa constantia restitisset.
-        </p>
-      </div>
-      <div class="col">
-        <i class="fas fa-users fa-3x"></i>
-        <h3>La communauté</h3>
-        <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.
-        </p>
-      </div>
-    </div>
 
-    <div class="testimony-header p-3 text-center">
-      <h1>Témoignages</h1>
-    </div>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 mt-2 text-center">
+        <div class="col">
+          <i class="fas fa-money-bill-wave fa-3x"></i>
+          <h3>Pas chère</h3>
+          <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogatus multa coactusque mentiri, miraberis numquam antea visus summatem virum tenuem te sic enixius observantem, ut paeniteat ob haec bona tamquam praecipua non vidisse ante decennium Romam.
+          </p>
+        </div>
+        <div class="col">
+          <i class="fas fa-couch fa-3x"></i>
+          <h3>Relax</h3>
+          <p>Denique Antiochensis ordinis vertices sub uno elogio iussit occidi ideo efferatus, quod ei celebrari vilitatem intempestivam urgenti, cum inpenderet inopia, gravius rationabili responderunt; et perissent ad unum ni comes orientis tunc Honoratus fixa constantia restitisset.
+          </p>
+        </div>
+        <div class="col">
+          <i class="fas fa-users fa-3x"></i>
+          <h3>La communauté</h3>
+          <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.
+          </p>
+        </div>
+      </div>
 
-    <div class="row row-cols-1 row-cols-md-2 mb-3 mt-2 text-center">
-      <div class="col">
-        <img class="card-img-top" src="https://images.pexels.com/photos/240513/pexels-photo-240513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="surfman">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-text"> 
-              <p>Surfing is love, surfing is life</p>
-              <p class="">Someone.Mai 2025</p>
+      <!-- TESTIMONIES -->
+      <div class="testimony-header p-3 text-center">
+        <h1>Témoignages</h1>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 mb-3 mt-2 text-center">
+        <div class="col">
+          <img class="card-img-top custom-img " src="https://images.pexels.com/photos/240513/pexels-photo-240513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="surfman">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-text">
+                <p>Surfing is love, surfing is life</p>
+                <small class="">Someone. June 2021</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <img class="card-img-top custom-img " width src="https://images.pexels.com/photos/2869354/pexels-photo-2869354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="planche de surfs">
+          <div class="card ">
+            <div class="card-body">
+              <div class="card-text">
+                <p>Surfing is love, surfing is life</p>
+                <small class="text-">Someone. July 2024</small>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <img class="card-img-top" src="https://images.pexels.com/photos/240513/pexels-photo-240513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="surfman">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-text"> 
-              <p>Surfing is love, surfing is life</p>
-              <p class="">Someone.Mai 2025</p>
+      <!-- PRICE TITLE -->
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="">Prix</h1>
+      </div>
+      <!-- PRICE CARDS -->
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Semaine d'essai</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">0€<small class="text-muted fw-light">/mois</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Le kiff</li>
+                <li>A Bali</li>
+                <li>Pendant 1 semaine</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">S'inscrire</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Early bird</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">15€<small class="text-muted fw-light">/mois</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Le kiff</li>
+                <li>A Bali</li>
+                <li>Pendant 12 semaines</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">S'inscrire</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">En trois fois</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">7€<small class="text-muted fw-light">/mois</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Le kiff</li>
+                <li>A Bali</li>
+                <li>Pendant 12 semaines</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">S'inscrire</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <!-- PRICE TITLE -->
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="">Prix</h1> 
-    </div>
-
-    <!-- PRICE CARDS -->
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Semaine d'essai</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">0€<small class="text-muted fw-light">/mois</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Le kiff</li>
-              <li>A Bali</li>
-              <li>Pendant 1 semaine</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">S'inscrire</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Early bird</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">15€<small class="text-muted fw-light">/mois</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Le kiff</li>
-              <li>A Bali</li>
-              <li>Pendant 12 semaines</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">S'inscrire</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm ">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">En trois fois</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">7€<small class="text-muted fw-light">/mois</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Le kiff</li>
-              <li>A Bali</li>
-              <li>Pendant 12 semaines</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">S'inscrire</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
+    <footer class="ps-2">
+      <small class="text-muted"><i class="far fa-copyright "></i>Bootstrap & The Surfing Project</small>
+    </footer>
     
   </body>
 </html>
